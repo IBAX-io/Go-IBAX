@@ -25,7 +25,7 @@ func (s durationSlice) Len() int           { return len(s) }
 func (s durationSlice) Less(i, j int) bool { return s[i] < s[j] }
 func (s durationSlice) Swap(i, j int)      { s[i], s[j] = s[j], s[i] }
 
-// checkClockDrift queries an NTP server for clock drifts and warns the user if
+// CheckClockDrift queries an NTP server for clock drifts and warns the user if
 // one large enough is detected.
 func CheckClockDrift() (bool, error) {
 	drift, err := sntpDrift(ntpChecks)

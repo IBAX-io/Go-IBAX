@@ -33,7 +33,7 @@ func (m *Param) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
-// MakeParams can be used to generate JSONRPC Params field from well-known
+// MustParams can be used to generate JSONRPC Params field from well-known
 // data, which should not fail.
 //
 // Examples:
