@@ -482,7 +482,7 @@ func GetMaxTxSize() int64 {
 	return converter.StrToInt64(SysString(MaxTxSize))
 }
 
-// GetMaxTxTextSize is returns max tx text size
+// GetMaxForsignSize is returns max tx text size
 func GetMaxForsignSize() int64 {
 	return converter.StrToInt64(SysString(MaxForsignSize))
 }
